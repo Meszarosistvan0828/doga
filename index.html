@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pólórendelés</title>    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+</head>
+<body >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5 mt-5">
+                <h1>Rendelj egyedi pólót!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 keret">
+                <div id="polo" id="kep">
+                    <img src="assets/images/polo-zold.png" alt="">
+                    <p id="felirat">JÁNOSI</p>
+                    <p id="sorszam">19</p>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-2 keret jobb">
+                <div class="form-group">
+                    <label>Válassz színt!</label>
+                    <select class="form-control" id="valasztott" onchange="tolt()">
+                        <option id="zold" value="1">Zöld</option>
+                        <option id="kek" value="2">Kék</option>
+                        <option id="narancs" value="3">Narancs</option>
+                        <option id="piros" value="4">Piros</option>
+                        <option id="szurke" value="5">Szürke</option>
+                    </select>
+                </div>
+                <div class="form-group mt-5">
+                    <label>Felirat</label>
+                    <input type="text" class="form-control" value="JÁNOSI" id="felirat">
+                </div>
+                <div class="form-group mt-5">
+                    <label>Szám</label>
+                    <input type="number"class="form-control" value="19" min="1" max="99">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
